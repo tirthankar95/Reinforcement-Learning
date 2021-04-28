@@ -22,13 +22,13 @@ void printGrid(){
 int main(){
 	file=fopen("op.txt","w");
 	srand(time(0));
-	grid[0][0]=0;
 	for(int i=0;i<gridSize;i++)
 		for(int j=0;j<gridSize;j++)
 			grid[i][j]=-1;
 	for(int i=0;i<mxBad;i++)
 		grid[rand()%gridSize][rand()%gridSize]=-10;
-	//printGrid();
+	grid[0][0]=0;
+	printGrid();
 	fclose(file);
 	return 0;
 }
