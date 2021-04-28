@@ -28,7 +28,7 @@ int main(){
 			grid[i][j]=-1;
 	for(int i=0;i<mxBad;i++)
 		grid[rand()%gridSize][rand()%gridSize]=-10;
-	printGrid();
+	//printGrid();
 	fclose(file);
 	return 0;
 }
